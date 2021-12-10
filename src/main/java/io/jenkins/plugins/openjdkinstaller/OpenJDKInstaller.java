@@ -31,8 +31,8 @@ public class OpenJDKInstaller extends ToolInstaller {
 
     @Override
     public FilePath performInstallation(ToolInstallation tool, Node node, TaskListener log) throws IOException, InterruptedException {
-        FilePath expected = preferredLocation(tool, node);
-        getVendor().getDescriptor().getInstallableVersions();
+        //FilePath expected = preferredLocation(tool, node);
+        //getVendor().getDescriptor().getInstallableVersions();
         return null;
     }
 
