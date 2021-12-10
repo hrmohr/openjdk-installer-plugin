@@ -10,6 +10,7 @@ import org.kohsuke.stapler.DataBoundConstructor;
 import java.util.List;
 
 public class Semeru extends OpenJDKVendor {
+
     @DataBoundConstructor
     public Semeru() {
         super();

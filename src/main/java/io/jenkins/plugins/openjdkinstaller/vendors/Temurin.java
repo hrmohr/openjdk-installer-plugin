@@ -10,6 +10,7 @@ import org.kohsuke.stapler.DataBoundConstructor;
 import java.util.List;
 
 public class Temurin extends OpenJDKVendor {
+
     @DataBoundConstructor
     public Temurin() {
         super();
