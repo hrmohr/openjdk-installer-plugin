@@ -1,0 +1,4 @@
+<?jelly escape-by-default='true'?>
+<div>
+    Provides an installer for the JDK tool that downloads the JDK from a supported OpenJDK vendor
+</div>
