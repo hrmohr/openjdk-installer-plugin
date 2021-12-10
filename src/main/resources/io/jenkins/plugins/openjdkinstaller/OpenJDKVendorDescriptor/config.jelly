@@ -1,0 +1,14 @@
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core" xmlns:f="/lib/form">
+    <f:section title="${descriptor.displayName}">
+        <f:entry description="${descriptor.description}">
+            <f:helpLink url="${descriptor.getHelpFile('vendor')}"/>
+        </f:entry>
+        <f:entry title="${%Version}" field="version">
+            <f:select default="${descriptor.defaultVersion}"/>
+        </f:entry>
+        <f:entry title="${%Release}" field="release">
+            <f:select/>
+        </f:entry>
+    </f:section>
+</j:jelly>
