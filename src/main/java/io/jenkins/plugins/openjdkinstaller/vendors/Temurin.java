@@ -8,7 +8,6 @@ import io.jenkins.plugins.openjdkinstaller.OpenJDKVendorDescriptor;
 import org.kohsuke.stapler.DataBoundConstructor;
 
 import java.util.List;
-import java.util.Objects;
 
 public class Temurin extends OpenJDKVendor {
     @DataBoundConstructor
@@ -31,7 +30,11 @@ public class Temurin extends OpenJDKVendor {
 
         @Override
         public List<OpenJDKVersion> getInstallableVersions() {
-            return Objects.requireNonNull(OpenJDKVersionListImpl.all().get(OpenJDKVersionListImpl.class)).toList();
+            OpenJDKVersionListImpl openJDKVersionList = OpenJDKVersionListImpl.all().get(OpenJDKVersionListImpl.class);
+            if (openJDKVersionList != null) {
+                return openJDKVersionList.toList();
+            }
+            return null;
         }
     }
 
