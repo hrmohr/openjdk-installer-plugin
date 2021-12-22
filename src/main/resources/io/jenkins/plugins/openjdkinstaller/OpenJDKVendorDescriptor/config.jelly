@@ -1,9 +1,7 @@
 <?jelly escape-by-default='true'?>
 <j:jelly xmlns:j="jelly:core" xmlns:f="/lib/form">
     <f:section title="${descriptor.displayName}">
-        <f:entry description="${descriptor.description}">
-            <f:helpLink url="${descriptor.getHelpFile('vendor')}"/>
-        </f:entry>
+        <f:entry title="${descriptor.description}" help="${descriptor.getHelpFile('vendor')}"/>
         <f:entry title="${%Version}" field="version">
             <f:select default="${descriptor.defaultVersion}"/>
         </f:entry>
