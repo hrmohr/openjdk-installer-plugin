@@ -23,7 +23,15 @@
   THE SOFTWARE.
   #L%
   -->
-<div>
-    Warning about selecting <i>Latest</i> goes here. Also warn about availability of supported platforms for each
-    release.
+<div class="warning">
+    <p>
+        When selecting <i>Latest</i> the installer will check for latest available release on each use.
+        This can result in unpredictable build results. Instead, consider preinstalling a JDK on
+        agents, using images that already include a JDK, or downloading the desired
+        JDK manually and configuring the <q>Extract *.zip/*.tar.gz</q> installer.
+    </p>
+    <p>
+        It is not guaranteed that binaries are available for all OS/CPU combinations.
+        Check <a href="https://developer.ibm.com/languages/java/semeru-runtimes/downloads/" target="_blank">download page</a> for availability.
+    </p>
 </div>
